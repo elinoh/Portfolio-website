@@ -6,24 +6,25 @@ html {
 /* Layout styling */
 .container {padding: 0 15px;}
 
- .logo {max-width: 250px;}
+ .logo {max-width: 150px;}
 
  header {
    background-color: #E3EDFF;
-   text-align: center;
-   padding: 10px 0;
+   padding: 10px 0 4px;
    margin: 0 auto;
    box-shadow: 1.5px 1.5px 1px rgba(30, 30,  30, 0.75);
  position: fixed; width: 100%;
 display: inline-block;}
 
-nav{width: 100%;}
    nav > ul {
-     list-style-type: none;
-     padding: 0;}
+     margin: 0;}
+
+     .navtoggle.responsive li  {
+  display: block;
+}
 
 nav > ul > li {
-  display: inline-block;
+
   list-style-type: none;
   padding: 0;}
 
@@ -37,6 +38,34 @@ nav > ul> li > a:visited {color:#019FC8}
 nav > ul> li > a:hover {color:#cc6540}
 nav > ul> li > a:activated {color:#994c30}
 
+.navtoggle li:not(:last-child) {
+  display: none;}
+
+.navtoggle, .navtoggle.responsive {
+  position: relative;}
+
+.navtoggle li .icon {
+  position: absolute;
+  padding-right: 20;
+  right: 0;
+  top: 15px;
+  font-size: 20px;
+}
+
+.navtoggle.responsive nav {
+  padding: 24px 0 0;
+}
+.navtoggle.responsive li  {
+  display: block;
+  padding: 10px 0;
+  border-top: 1px solid rgba(255,127,80,0.5);
+}
+
+.navtoggle.responsive li:last-child  {
+  padding: 0 0 10px;
+}
+
+
 #hero {
   padding: 0;
   background-color: #F8F8F8;
@@ -48,7 +77,7 @@ nav > ul> li > a:activated {color:#994c30}
   #hero span { display: block;}
 
  main {
-  padding-top: 90px;
+  padding-top: 46px;
   text-align: center;}
 
  selector {
@@ -461,13 +490,22 @@ Medium devices (640px and larger)
   header {
     text-align: unset;
     padding: 20px 0 13px;
-  }
+    .container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;}
+  nav > ul > li {display: inline-block;}
 
   nav {
     width: auto;
     float: right;
     margin-top: 4px;
-  }
+  margin-right: 5px;}
+
+  nav > ul {
+  margin: 1em 0;
+}
+
 }
 /* ==============================
 Large devices (1024px or larger)
@@ -483,31 +521,4 @@ X-large devices (1440px or larger)
 Extra-large devices (1920px or larger)
 ================================= */
 @media only screen and (min-width: 1920px) {
-}
-
-@keyframes color-change {
-  from {fill: #edc655;}
-  to {fill: #f76414;}
-}
-@keyframes color-change {
-  0% {fill: #edc655;}
-  50% {fill: #fcffad;}
-  100% {fill: #f76414;}
-}
-.sun {
-  animation: 4s color-change infinite alternate linear;
-}
-@keyframes cloud-move {
-  from {transform: translate(0,50px);}
-  to {transform: translate(200px,50px);}
-}
-.cloud-front {
-  animation: 30s cloud-move infinite alternate linear;
-}
-@keyframes cloud-move-reverse {
-  from {transform: translate(446px,48px);}
-  to {transform: translate(100px, 48px);}
-}
-.cloud-back {
-  animation: 34s cloud-move-reverse infinite alternate linear;
 }
