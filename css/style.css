@@ -36,7 +36,6 @@ nav > ul > li > a {
 
 nav > ul> li > a:visited {color:#019FC8}
 nav > ul> li > a:hover {color:#cc6540}
-nav > ul> li > a:activated {color:#994c30}
 
 .navtoggle li:not(:last-child) {
   display: none;}
@@ -111,22 +110,22 @@ body {
 
 .button.contact {
   background-color: transparent;
-  color: #019FC8;
+  color: #0181A2;
   text-transform: uppercase;
-  border: 1.5px solid #019FC8;}
+  border: 1.5px solid #0181A2;}
 
 .button.contact:hover {
-  background-color: #019FC8;
+  background-color: #0181A2;
   color: #ffffff;}
 
 .button.resume {
   background-color: transparent;
-  color: #019FC8;
+  color: #0181A2;
   text-transform: uppercase;
-  border: 2px solid #019FC8;}
+  border: 2px solid #0181A2;}
 
 .button.resume:hover {
-  background-color: #019FC8;
+  background-color: #0181A2;
   color: #ffffff;}
 
 /**
@@ -503,8 +502,7 @@ Medium devices (640px and larger)
   margin-right: 5px;}
 
   nav > ul {
-  margin: 1em 0;
-}
+  margin: 1em 0;}
 
 }
 /* ==============================
