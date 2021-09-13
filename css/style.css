@@ -6,15 +6,26 @@ html {
 /* Layout styling */
 .container {padding: 0 15px;}
 
- .logo {max-width: 150px;}
+ .logo {max-width: 250px; margin: 5px;}
 
  header {
    background-color: #E3EDFF;
-   padding: 10px 0 4px;
+   padding: 10px 0 15px;
    margin: 0 auto;
    box-shadow: 1.5px 1.5px 1px rgba(30, 30,  30, 0.75);
  position: fixed; width: 100%;
 display: inline-block;}
+
+selector {
+  position: relative;
+}
+selector {
+  width: 1200px;
+}
+.container {
+  max-width: 1200px;\
+  padding: 0 15px;
+}
 
    nav > ul {
      margin: 0;}
@@ -24,7 +35,6 @@ display: inline-block;}
 }
 
 nav > ul > li {
-
   list-style-type: none;
   padding: 0;}
 
@@ -47,7 +57,7 @@ nav > ul> li > a:hover {color:#cc6540}
   position: absolute;
   padding-right: 20;
   right: 0;
-  top: 15px;
+  top: 2px;
   font-size: 20px;
 }
 
@@ -106,6 +116,9 @@ nav > ul> li > a:hover {color:#cc6540}
 body {
   img {width: 100%;}
   font-family: 'roboto', sans-serif;
+  font-size: 16px; /* Sets the font size to 16px */
+  font-weight: 300; /* Sets the font weight to 300 */
+  line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
   margin: 0;}
 
 .button.contact {
@@ -485,7 +498,7 @@ template {
 /* ==============================
 Medium devices (640px and larger)
 ================================= */
-@media only screen and (min-width: 640px) {
+@media only screen and (min-width: 641px;) {
   header {
     text-align: unset;
     padding: 20px 0 13px;
@@ -494,7 +507,10 @@ Medium devices (640px and larger)
   margin-left: auto;
   margin-right: auto;}
   nav > ul > li {display: inline-block;}
-
+  .navtoggle li:not(:last-child) {display: inline-block;}
+  .navtoggle li:last-child {
+    display: none;
+  }
   nav {
     width: auto;
     float: right;
