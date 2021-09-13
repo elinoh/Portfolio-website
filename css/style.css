@@ -55,7 +55,7 @@ nav > ul> li > a:hover {color:#cc6540}
 
 .navtoggle li .icon {
   position: absolute;
-  padding-right: 20;
+  padding-right: 30px;
   right: 0;
   top: 2px;
   font-size: 20px;
